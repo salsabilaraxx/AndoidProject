@@ -40,5 +40,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, CalculatorActivity::class.java)
             startActivity(intent)
         }
+
+        binding.btnNotes.setOnClickListener {
+            val intent = Intent(this, NotesActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

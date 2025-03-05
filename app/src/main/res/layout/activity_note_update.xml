@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoteUpdateActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/poppins"
+        android:text="Edit Catatan"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/updateEditTextText"
+        app:layout_constraintEnd_toEndOf="@+id/updateEditTextText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/updateEditTextText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/btn_updatenote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/updateEditTextText"
+        app:layout_constraintEnd_toEndOf="@+id/updateEditTextText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/updateEditTextText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_save_24" />
+
+    <EditText
+        android:id="@+id/updateEditTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/border"
+        android:ems="12"
+        android:fontFamily="@font/poppins"
+        android:hint="Judul"
+        android:inputType="text"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.087" />
+
+    <EditText
+        android:id="@+id/updateEditTextText2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/border"
+        android:ems="12"
+        android:fontFamily="@font/poppins"
+        android:gravity="top"
+        android:hint="Deskripsi"
+        android:inputType="textMultiLine"
+        android:lines="10"
+        android:maxLines="15"
+        android:minLines="6"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/updateEditTextText"
+        app:layout_constraintStart_toStartOf="@+id/updateEditTextText"
+        app:layout_constraintTop_toBottomOf="@+id/updateEditTextText"
+        app:layout_constraintVertical_bias="0.2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

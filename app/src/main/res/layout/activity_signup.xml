@@ -8,12 +8,12 @@
     tools:context=".SignupActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/logintextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif"
+        android:fontFamily="@font/poppins"
         android:text="Registrasi"
-        android:textSize="20sp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,9 +28,9 @@
         android:ems="15"
         android:hint="Username"
         android:inputType="text"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintEnd_toEndOf="@+id/logintextView"
+        app:layout_constraintStart_toStartOf="@+id/logintextView"
+        app:layout_constraintTop_toBottomOf="@+id/logintextView" />
 
     <EditText
         android:id="@+id/txtPassword"
@@ -60,6 +60,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
         android:text="Sudah punya akun? Login"
         android:textColor="#2962FF"
         app:layout_constraintEnd_toEndOf="@+id/btnSubmit"
